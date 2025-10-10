@@ -1,0 +1,1606 @@
+/* Trustaurant Custom CSS */
+
+img {
+    width: 100%;
+}
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+/*/ --- home page css starts --- /*/
+.navbar {
+    background-color: #000;
+    padding: 7px 7%;
+    width:100%;
+    transition:0.3s ease-in;
+}
+.navbar .navbar-toggler .fa-solid {
+    color: #fff;
+}
+.navbar-fixed-top.scrolled-inner {
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+    position:fixed;
+    z-index:99999;
+    transition:0.3s ease-in;
+}
+.navbar .navbar-brand img {
+    width: 83px;
+    transition:0.3s ease-in;
+}
+.navbar-fixed-top.scrolled-inner .navbar-brand img {
+    width: 65px;
+}
+.navbar-fixed-top.scrolled-inner .main-logo-trustaurant {
+    width: 124px !important;
+}
+.navbar-fixed-top.scrolled-inner .main-logo-partner {
+    width: 200px !important;
+}
+.navbar-fixed-top.scrolled-inner .navbar-collapse {
+    top:100px;
+}
+.main-logo-partner {
+    width: 240px !important;
+}
+.main-logo-trustaurant {
+    width: 154px !important;
+}
+.navbar .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 25px !important;
+    color:0.2s ease-in;
+}
+.navbar .nav-link:hover {
+    color:#FFB300;
+}
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+.navbar .nav-link img {
+    width: 22px;
+    margin: -5px 0px 0px 3.5px;
+}
+.active-clr{
+    color: #FFB300 !important;
+}
+.main-carousel {
+    height: 90vh;
+}
+.main-carousel .carousel-item {
+    position: relative;
+}
+.main-carousel .carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+.main-carousel .slider-caption {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 7%;
+}
+.main-carousel .slider-caption h2 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 50px;
+}
+.main-carousel .slider-caption h3 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 38px;
+}
+.main-carousel .slider-caption h3 span {
+    color: #FFB300;
+}
+
+.about-main {
+    background-image: url('../images/ui/about-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-main .custom-container {
+    padding: 70px 7%;
+}
+.about-main h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
+.about-main p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size:18px;
+    width: 100%;
+    margin: 30px auto;
+}
+.app-content-home {
+    position:relative;
+}
+.app-content-home .content {
+    padding-right:100px;
+}
+.app-content-home:before {
+    content: '';
+    background-image:url('../images/ui/an-bg1.png');
+    display: block;
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 27%;
+    margin: auto;
+    top: 10%;
+    animation:swing 12.5s infinite ease-in-out;
+}
+@keyframes swing {
+    from {
+        transform: rotate(39deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(39deg);
+    }
+}
+.app-content-home .custom-container {
+    padding: 60px 7%;
+    position: relative;
+    z-index: 999;
+}
+.app-content-home h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+.app-content-home .content h4 img {
+    width: 62px;
+    margin: -10px 4px 0px 9px;
+}
+.app-content-home .content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    font-size: 18px;
+}
+.about-long-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+.about-long-text p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    font-size: 18px;
+}
+.app-content-home .content .l-more-btn {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(180deg, #FFB300 65.56%, rgba(255, 179, 0, 0.53) 100%);
+    border-radius: 40px;
+    padding: 4px 15px;
+    color: #fff;
+    margin-bottom: 30px;
+    display: block;
+    width: fit-content;
+    margin-top:35px;
+    transition:0.3s ease-in;
+    cursor:pointer;
+    border: none;
+}
+.l-more-btn {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(180deg, #FFB300 65.56%, rgba(255, 179, 0, 0.53) 100%);
+    border-radius: 40px;
+    padding: 4px 15px;
+    color: #fff;
+    margin-bottom: 30px;
+    display: block;
+    width: fit-content;
+    margin-top:35px;
+    transition:0.3s ease-in;
+    cursor:pointer;
+    border:none;
+}
+.app-content-home .content .l-more-btn:hover {
+    color:#3a3a3a;
+}
+
+.team-home {
+    position:relative;
+}
+.team-home:before {
+    content: '';
+    background-image: '../images/an-bg1.png';
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 18%;
+    bottom: 6px;
+    margin: auto;
+    top: 10%;
+    animation:moveZoomRotate 12.5s infinite ease-in-out;
+}
+@keyframes moveZoomRotate {
+  0%, 100% {
+    transform: translateX(0) scale(0.8) rotate(0deg);
+  }
+  50% {
+    transform: translateX(100px) scale(1.5) rotate(15deg);
+  }
+  75% {
+    transform: translateX(150px) scale(0.8) rotate(0deg);
+  }
+  50% {
+    transform: translatey(150px) scale(1.5) rotate(15deg);
+  }
+}
+
+.team-home .custom-container {
+    padding: 60px 7%;
+}
+.team-home .head {
+    display: flex;
+}
+.team-home .head h2 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 84px;
+}
+.team-home .head h3 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 13px;
+    font-size: 36px;
+    line-height: 1;
+}
+.team-home .head h3 span {
+    color: #FFB300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.team-home p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    font-size: 18px;
+}
+.team-home .content {
+    border-bottom: 2px solid #495056;
+    padding-bottom: 80px;
+}
+.team-home .content h4 {
+    color: #FFB300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 40px 0px;
+}
+.team-home .content ul {
+    padding-left: 20px;
+}
+.team-home .content li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin: 40px 0px 0px;
+}
+.team-home .content li span {
+    font-weight: 700;
+    font-size:18px;
+}
+
+.po-services-home .custom-container {
+    padding: 20px 7% 60px;
+}
+.po-services-home .head h4 {
+    color: #495056;
+}
+.po-services-home .head p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    color: #000000;
+    border-radius: 25px;
+    background-color: #4950561a;
+    padding: 30px 40px;
+    margin: 40px auto;
+    font-size: 18px;
+}
+.po-services-home .head h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+.po-services-home .content {
+    background-color: #222C35;
+    padding: 50px 40px;
+    border-radius: 25px;
+}
+.po-services-home .content h4 {
+    color: #FFB300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.po-services-home .content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size:18px;
+}
+/*/ --- home page css ends --- /*/
+
+/*/ --- about page css starts --- /*/
+.about-inner .custom-container {
+    padding: 80px 7%;
+}
+.about-inner .about-content {
+    margin-bottom: 100px;
+}
+.about-inner .about-content .head h4 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    text-transform: uppercase;
+    position: relative;
+}
+.about-inner .about-content .head h4:after {
+    content: '';
+    display: block;
+    width: 225px;
+    height: 6px;
+    background-color: #FFB300;
+    border-radius: 15px;
+    margin-top: -6px;
+}
+.about-inner .about-content .content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size:18px;
+    color: #000;
+    text-align: justify;
+} 
+.about-inner .story-content {
+    margin-bottom: 100px;
+    position:relative;
+}
+.about-inner .story-content:before {
+    content: '';
+    background-image: url('../images/ui/an-bg1.png');
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 18%;
+    margin: auto;
+    top: 10px;
+    animation: moveZoomRotate 12.5s infinite ease-in-out;
+}
+.about-inner .story-content .head h4 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index:9999;
+}
+.about-inner .story-content .head h4:after {
+    content: '';
+    display: block;
+    width: 220px;
+    height: 6px;
+    background-color: #FFB300;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+    top: -8px;
+}
+.about-inner .story-content .content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    font-size: 18px;
+}
+.about-inner .mission-content .head h4 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    margin-top:80px;
+    margin-bottom: 110px;
+    text-align: right;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+}
+.about-inner .mission-content .head h4:after {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 6px;
+    background-color: #FFB300;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-top: -6px;
+}
+.about-inner .mission-content .content img {
+    border-radius: 15px;
+    margin-bottom:30px;
+}
+.about-inner .mission-content .content p {
+    text-align: center;
+    width: 90%;
+    margin: 100px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size:18px;
+}
+.about-inner .mission-content .content .sub-content p {
+    text-align: left;
+    margin: 0px 0px 40px;
+    font-size: 18px;
+}
+.about-inner .mission-content .content .sub-content h4 {
+    color: #FFB300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+.about-inner .mission-content {
+    position:relative;
+}
+.about-inner .mission-content .content {
+    z-index:999;
+}
+.about-inner .mission-content:before {
+    content: '';
+    background-image: url('../images/ui/an-bg1.png');
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 18%;
+    margin: auto;
+    bottom: 60px;
+    animation: moveZoomRotate 12.5s infinite ease-in-out;
+}
+/*/ --- about page css ends --- /*/
+
+/*/ --- app page css starts --- /*/
+.app-banner-inner {
+    background-image: url('../images/ui/team-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.app-banner-inner .custom-container {
+    padding: 60px 7%;
+}
+.app-banner-inner .content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.app-banner-inner .content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.app-banner-inner .content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size:18px;
+}
+.app-inner-content .content ul li {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    font-weight:500;
+    font-size: 18px;
+}
+.app-banner-inner .content p span {
+    color: #FFB300;
+}
+.app-banner-inner h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin-top: 40px;
+}
+.app-banner-inner p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size:18px;
+}
+.app-slider-banner .custom-container {
+    padding: 15px 7% 50px;
+}
+.app-slider-banner .banner-item {
+    background-color: #FFB300;
+    border-radius: 15px;
+    padding: 40px;
+    overflow: hidden;
+    min-height: 450px; /* adjust height to match original */
+    display: flex;
+    align-items: center;
+}
+.app-slider-banner .banner-item .img {
+    height: 100%;
+}
+
+.app-slider-banner .banner-item .img img {
+    width: 100%;
+    height: auto; /* preserve aspect ratio */
+    max-height: 450px; /* or your preferred max height */
+    object-fit: contain; /* ensures whole image is visible */
+}
+
+.app-slider-banner .banner-item p strong {
+    color:#000;
+}
+.app-slider-banner .banner-item p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+
+}
+/* Ensure slider container is the reference */
+.app-slider-banner {
+    position: relative; /* make it reference for absolute arrows */
+    overflow: visible;  /* allow arrows to be outside */
+}
+
+/* --- Arrow Base Styles --- */
+.app-slider-banner .slick-prev,
+.app-slider-banner .slick-next {
+    position: absolute;
+    bottom: -30px; /* Increased distance below the banner to -30px for clarity */
+    width: 40px;
+    height: 40px;
+    z-index: 999;   /* ensure above banner and other elements */
+    background: none;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    /* Optional: Add a transition for a smoother hover effect */
+    transition: all 0.3s ease; 
+}
+
+/* Left arrow: positioned 10px from the left edge */
+.app-slider-banner .slick-prev {
+    left: 10px; 
+}
+
+/* Right arrow: positioned 10px from the right edge */
+.app-slider-banner .slick-next {
+    right: 10px; 
+}
+
+/* --- Arrow Icon Styles (The visible part) --- */
+.app-slider-banner .slick-prev:before,
+.app-slider-banner .slick-next:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    /* Add a background color for contrast/fallback */
+    background-color: #f1f1f1; /* Light gray circle background for the arrow */
+    
+    background-image: url('../images/ui/sl-btn.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; /* Makes the background a circle */
+    /* Optional: Add a subtle shadow to make it pop */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Rotate the icon for the left arrow */
+.app-slider-banner .slick-prev:before {
+    transform: rotate(180deg);
+}
+
+/* Optional: Hover state for visual feedback */
+.app-slider-banner .slick-prev:hover:before,
+.app-slider-banner .slick-next:hover:before {
+    background-color: #fff; /* White background on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.app-slider-banner .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    bottom: -30px; /* adjust to move below the slider */
+    flex-direction: row !important; /* ensure horizontal */
+}
+
+.app-slider-banner .slick-dots li {
+    margin: 0 5px; /* spacing between dots */
+}
+.app-slider-banner .slick-dots button:before {
+    background-color: #D9D9D9;
+    content: '.';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+}
+.app-slider-banner .slick-dots .slick-active button:before {
+    content: '.';
+    display: block;
+    background-color: #FFB300;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+}
+.app-slider-banner .slick-dots li {
+    list-style: none;
+    display: inline;
+}
+.app-inner-content .custom-container {
+    padding: 40px 7%;
+}
+.app-inner-content .img {
+    padding: 50px 0px;
+}
+.app-inner-content .img img {
+    object-fit: cover;
+    border-radius: 15px;
+}
+.app-inner-content .left-img {
+    padding-right:80px;
+}
+.app-inner-content .right-content {
+    padding-left:80px;
+}
+.app-inner-content .right-img {
+    padding-left:80px;
+}
+.app-inner-content .left-content {
+    padding-right:80px;
+}
+.app-inner-content .content {
+    background-image: url('../images/ui/app-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+.app-inner-content .content h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 40px;
+}
+.app-inner-content .content ul {
+    margin-bottom:20px;
+    padding-left: 20px;
+}
+.app-inner-content .content p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    text-align: justify;
+    font-size:18px;
+    font-weight: 500;
+}
+.app-inner-content .content h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.app-inner-content .content .ht-works h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.app-inner-content .content .ht-works p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    text-align: justify;
+    padding-left: 18px;
+}
+.app-inner-content .content .ht-works h6 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.app-inner-content .app-links {
+    padding: 40px 0px;
+    position:relative;
+    font-size: 18px;
+    font-weight: 500;
+}
+.app-inner-content .app-links:before {
+    content: '';
+    background-image: url('../images/ui/an-bg1.png');
+    display: block;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 10%;
+    animation: swing 10.5s infinite ease-in-out;
+}
+.app-inner-content .app-links .app-icons {
+    position:relative;
+    z-index:999;
+}
+.app-inner-content .app-links h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 34px;
+}
+.app-inner-content .app-links p  {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 50px auto;
+}
+.app-inner-content .app-links p span {
+    color: #FFB300;
+}
+.app-inner-content .app-links .app-icons img {
+    width: 200px;
+    display: block;
+    border-radius: 10px;
+}
+.app-inner-content .app-links .app-icons .ml-auto {
+    margin-left: auto;
+}
+.app-inner-content .app-links .social-links p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+.app-inner-content .app-links .social-links ul {
+    text-align: center;
+    padding-left: 0px;
+}
+.app-inner-content .app-links .social-links ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+.app-inner-content .app-links .social-links ul li .fa-brands{
+    color: #000;
+    font-size: 24px;
+}
+/*/ --- app page css ends --- /*/
+
+/*/ --- partner page css starts --- /*/
+.partner-banner {
+    background-image: url('../images/ui/lp-banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding: 90px 7%;
+}
+.partner-banner .content {
+    width: 60%;
+}
+.partner-banner .content h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 42px;
+    line-height: 1.4;
+}
+.partner-banner .content .reg-btn {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #000;
+    display: block;
+    width: fit-content;
+    margin: 60px 0px 30px;
+    transition:0.3s ease-in;
+}
+.partner-banner .content .reg-btn:hover {
+    background-color: #FFB300;
+    color:#fff;
+}
+.partner-banner .content .login-btn {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #000;
+    display: block;
+    width: fit-content;
+    margin-bottom: 30px;
+    transition:0.3s ease-in;
+}
+.partner-banner .content .login-btn:hover {
+    background-color: #0190DE;
+    color:#fff;
+}
+.lp-docs-section {
+    background-color: #d9d9d936;
+}
+.lp-docs-section .custom-container {
+    padding: 50px 7%;
+}
+.lp-docs-section h4 {
+    color: #FFB300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.lp-docs-section p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+.lp-docs-section ul li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    list-style: none;
+    line-height: 2.5;
+    font-size:18px;
+}
+.lp-docs-section ul li .fa-solid {
+    color: #0CBD53;
+}
+.green-tick {
+    width: 17px;
+    margin-top: -4px;
+}
+.lp-criteria-section {
+    background-color: #fff;
+}
+.lp-criteria-section .custom-container {
+    padding: 50px 7%;
+}
+.lp-criteria-section h4 {
+    color: #FFB300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.lp-criteria-section p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+.lp-criteria-section ul li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    list-style: none;
+    line-height: 2.5;
+    font-size:18px;
+}
+.lp-criteria-section ul li .fa-solid {
+    color: #0CBD53;
+}
+.lp-why-trustaurant .head {
+    padding: 30px 7%;
+}
+.lp-why-trustaurant .head h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.lp-why-trustaurant .head h4 span {
+    color: #FFB300;
+}
+.lp-why-trustaurant .head p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    width: 70%;
+    margin: auto;
+    font-size:18px;
+}
+.lp-why-trustaurant .features {
+    background-color: #263238d6;
+    padding: 45px 14%;
+}
+.lp-why-trustaurant .features .content h4 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+.lp-why-trustaurant .features .content p {
+    margin-bottom: 0px;
+    color: #FFB300;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size:18px;
+}
+.lp-working-process h4 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.lp-working-process h4 span {
+    color: #FFB300;
+}
+.lp-working-process .content .step h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFB300;
+    background-color: #263238;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border-radius: 200px;
+    line-height: 6.7;
+    margin-bottom: 50px;
+}
+.lp-working-process .custom-container {
+    padding: 60px 7%;
+}
+.lp-working-process .content h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFB300;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.lp-working-process .content p {
+    margin-bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+}
+.lp-signup .custom-container {
+    padding: 40px 7%;
+}
+.lp-signup .content h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+.lp-signup .content h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.lp-signup .content ul {
+    padding-left: 20px;
+}
+.lp-signup .content ul li {
+    margin-bottom: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+}
+.lp-signup .img {
+    background-image: url('../images/ui/app-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lp-signup .img img {
+    height: 300px;
+    object-fit: contain;
+}
+.lp-faq-section .accordion-container {
+    width: 80%;
+    max-width: 600px;
+}
+.lp-faq-section .accordion-item {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: none;
+}
+.lp-faq-section .accordion-header {
+    background-color: #D9D9D9;
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+.lp-faq-section .accordion-header:hover {
+    background-color: #f6b343;
+}
+.lp-faq-section .accordion-content {
+    background-color: #d9d9d9;
+    border-radius: 6px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+.lp-faq-section .accordion-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+.lp-faq-section .icon {
+    transition: transform 0.3s ease;
+}
+.lp-faq-section .active .icon {
+    transform: rotate(45deg);
+}
+.lp-faq-section .accordion-container {
+    margin: auto;
+}
+.lp-faq-section h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.lp-faq-section h4 span {
+    color: #FFB300;
+}
+.lp-faq-section {
+    padding: 70px 7%;
+}
+.lp-app-link .custom-container {
+    padding: 0px 7% 60px;
+}
+.lp-app-link .app-links {
+    border-top: 2px solid #000;
+    padding-top: 40px;
+}
+.lp-app-link .app-links h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 34px;
+}
+.lp-app-link .app-links p  {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 30px auto;
+    font-weight:500;
+    font-size:18px;
+}
+.lp-app-link .app-links p span {
+    color: #FFB300;
+}
+.lp-app-link .app-links .app-icons img {
+    width: 200px;
+    display: block;
+}
+.lp-app-link .app-links .app-icons .ml-auto {
+    margin-left: auto;
+}
+.lp-app-link .app-links .social-links p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+.lp-app-link .app-links .social-links ul {
+    text-align: center;
+    padding-left: 0px;
+}
+.lp-app-link .app-links .social-links ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+.lp-app-link .app-links .social-links ul li .fa-brands{
+    color: #000;
+    font-size: 24px;
+}
+/*/ --- partner page css ends --- /*/
+
+/*/ --- career css starts --- /*/
+.career-main .custom-container {
+    padding: 60px 7%;
+}
+.career-main .career-content {
+    background-image: url('../images/ui/career-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.career-main .career-content .head h4 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.career-main .career-content .head h4:after {
+    content: '';
+    display: block;
+    width: 95px;
+    height: 5px;
+    background-color: #FFB300;
+    border-radius: 15px;
+}
+.career-main .career-content h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #495056;
+    margin: 40px 0px;
+}
+.career-main .career-content h5 span {
+    color: #FFB300;
+}
+.career-main .career-content h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #495056;
+    margin: 40px 0px;
+}
+.career-main .career-content h6 span {
+    color: #FFB300;
+}
+.career-main .career-content p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.career-main .career-content p span {
+    font-weight: 700;
+}
+.career-main .career-content .f-text {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+/*/ --- career css ends --- /*/
+
+/*/ --- contact css starts --- /*/
+.contact-main .custom-container  {
+    padding: 60px 7%;
+}
+.contact-main .head h4 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.contact-main .head h4:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: #FFB300;
+    border-radius: 15px;
+}
+.contact-main .contact-img {
+    height: 270px;
+    object-fit: contain;
+    text-align: center;
+    margin: 40px auto;
+} 
+.contact-main p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    font-weight: 500;
+    font-size:18px;
+}
+.contact-main .contact-informations h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.contact-main .contact-informations .contact-btns .call {
+    background-color: #495056;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    display: block;
+    width: 270px;
+    padding: 9px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.contact-main .contact-informations .contact-btns .chat {
+    background-color: #FFB300;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    display: block;
+    width: 270px;
+    padding: 9px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.contact-main .contact-informations .contact-btns .email {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    display: block;
+    width: 270px;
+    padding: 9px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.contact-main .contact-informations .contact-btns i {
+    margin-right: 20px;
+}
+.contact-main .contact-details h4 {
+    color: #495056;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 0px !important;
+}
+.contact-main .contact-details h4:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #FFB300;
+    border-radius:15px;
+}
+.contact-main .contact-details a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
+}
+/*/ --- contact css ends --- /*/
+
+/*/ --- footer css starts --- /*/
+.footer-starts {
+    background-color: #222C35;
+}
+.footer-starts .custom-container {
+    padding: 50px 7% 20px;
+}
+.footer-starts .logo {
+    width: 100px;
+}
+.footer-starts .quick-links h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+.footer-starts li {
+    list-style:none;
+}
+.footer-starts .quick-links li a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-top: 25px;
+}
+.footer-starts .address h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+.footer-starts .address p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-top: 25px;
+}
+.footer-starts .address a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-top: 25px;
+}
+.footer-starts .copyright {
+    border-top: 1px solid #fff;
+    margin-top: 35px;
+}
+.footer-starts .copyright li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    display: inline;
+    list-style: none;
+    margin-right: 25px;
+    font-size: 14px;
+}
+.footer-starts .copyright li a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.footer-starts .copyright h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.footer-starts .copyright .social-icons li {
+    margin-right: 10px;
+}
+.footer-starts .copyright .social-icons .fa-brands {
+    font-size: 18px;
+}
+.footer-starts .copyright .social-icons .fa-solid {
+    font-size: 18px;
+}
+.footer-starts .copyright .si-inner {
+    border-right: 1px solid #fff;
+}
+.footer-starts .copyright .pl-2 {
+    padding-left: 35px;
+}
+.footer-starts .copyright {
+    padding: 30px 0px 10px;
+}
+/*/ --- footer css ends --- /*/
+
+.app-links a {
+    position:relative;
+    z-index:999;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 991.5px) {
+    .navbar .navbar-collapse {
+        position: fixed;
+        background-color: #000;
+        top: 110px;
+        z-index: 99;
+        left: 0px;
+        width: 100%;
+        padding: 30px 25px;
+    }
+    .app-content-home .content {
+        padding-right:0px;
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .custom-container {
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+    .partner-banner .content {
+        width: 90%;
+    }
+    .partner-banner .content h2 {
+        font-size: 30px;
+    }
+    .partner-banner {
+        height: auto;
+    }
+    .lp-working-process .content .step h6 {
+        width: 90px;
+        height: 90px;
+        line-height: 5.5;
+        margin: 30px 0px;
+    }
+    .footer-starts .logo {
+        margin-bottom: 30px;
+    }
+    .footer-starts .copyright .social-icons {
+        margin-top: 20px;
+    }
+    .main-carousel .carousel-item img {
+        height: auto;
+    }
+    .main-carousel {
+        height: auto;
+    }
+    .main-carousel .slider-caption h2 {
+        font-size: 40px;
+    }
+    .main-carousel .slider-caption h3 {
+        font-size: 26px;
+    }
+    .app-content-home:before {
+        width:200px;
+        height:200px;
+    }
+    .team-home:before {
+        width:170px;
+        height:170px;
+    }
+    .lp-app-link .app-links .app-icons img {
+        width:150px;
+    }
+    .about-inner .story-content:before {
+        top:unset;
+        bottom: 70px;
+    }
+    .lp-why-trustaurant .features {
+        padding:45px 7%;
+    }
+    .lp-why-trustaurant .head p {
+        width:100%;
+        text-align:center !important;
+    }
+    .app-inner-content .app-links:before {
+        width:280px;
+        height:280px;
+    }
+    .app-inner-content .app-links .app-icons img {
+        width:150px;
+    }
+    .app-banner-inner .content h2 {
+        font-size:30px;
+    }
+    .app-banner-inner .content h1 {
+        font-size:30px;
+    }
+    .app-inner-content .left-img {
+        padding-right:0px;
+    }
+    .app-inner-content .right-content {
+        padding-left:0px;
+    }
+    .app-inner-content .right-img {
+        padding-left:0px;
+    }
+    .app-inner-content .left-content {
+        padding-right:0px;
+    }
+    .about-inner .mission-content .content p {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .about-inner .about-content .content p {
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .about-inner .story-content .content p {
+        margin-top:30px;
+    }
+    .app-banner-inner img {
+        margin-bottom:30px;
+    }
+    .about-main .custom-container {
+        padding: 70px 7% 20px;
+    }
+    .app-content-home .custom-container {
+        padding: 20px 7% 30px;
+    }
+    .team-home .custom-container {
+        padding: 30px 7% 30px;
+    }
+    p {
+        text-align:left !important;
+    }
+    .app-banner-inner .custom-container {
+        padding: 50px 7% 10px;
+    }
+    .lp-working-process h4 {
+        margin-bottom:15px;
+    }
+    .lp-signup .custom-container {
+        padding: 20px 7%;
+    }
+    .lp-working-process .custom-container {
+        padding: 50px 7% 25px;
+    }
+    .app-inner-content .img {
+        padding: 6px 0px;
+    }
+    .app-inner-content .content h4 {
+        margin-top: 10px;
+    }
+    .contact-main .custom-container {
+        padding: 30px 7%;
+    }
+    .contact-main .contact-details h4 {
+        margin-top:20px !important;
+    }
+    .about-inner .story-content {
+        margin-bottom:20px;
+    }
+    .about-inner .mission-content .head h4 {
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+    .footer-starts .address h4 {
+        margin-top:30px;
+    }
+    .about-inner .about-content {
+        margin-bottom: 40px;
+    }
+    .about-inner .custom-container {
+        padding: 50px 7%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .main-carousel .carousel-item img {
+        height: 300px;
+    }
+    .main-carousel .slider-caption {
+        top: 30%;
+        left: 0px;
+        right: 0px;
+    }
+    .app-content-home .content h4 img {
+        width: 50px;
+    }
+    .main-carousel .slider-caption h2 {
+        font-size: 34px;
+    }
+    .app-content-home h4 {
+        font-size:40px;
+    }
+}
+.pdg{
+    padding: 25px 0px !important;
+}
