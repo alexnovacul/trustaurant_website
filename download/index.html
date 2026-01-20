@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustaurant | Partner With Us</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500&family=Nunito+Sans:wght@400;700&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root { --brand-yellow: #FFB800; }
+        body { font-family: 'Poppins', sans-serif; }
+        .font-abhaya { font-family: 'Abhaya Libre', serif; }
+        .font-nunito { font-family: 'Nunito Sans', sans-serif; }
+        
+        .yellow-bg-shape {
+            position: absolute;
+            right: 0;
+            width: 85%;
+            height: 75%;
+            background-color: var(--brand-yellow);
+            border-radius: 40px;
+            z-index: -1;
+        }
+        .main-logo { height: 40px; }
+    </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+
+    <header class="bg-black text-white px-[8%] py-4 flex justify-between items-center sticky top-0 z-50">
+        <a href="http://trustaurant.com/">
+            <img src="../images/ui/trustaurantpagelogo.png" alt="Trustaurant Logo" class="main-logo">
+        </a>
+        <nav class="hidden md:block">
+            <ul class="flex space-x-8 text-sm font-semibold tracking-wide">
+                <li><a href="http://trustaurant.com/" class="hover:text-amber-400">Home</a></li>
+                <li><a href="https://novacul.com/about" class="hover:text-amber-400">About Us</a></li>
+                <li><a href="https://novacul.com/partner_app" class="text-amber-400">Partner With Us</a></li>
+                <li><a href="https://novacul.com/contact-us" class="hover:text-amber-400">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-[8%] py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <h1 class="text-6xl md:text-7xl font-black tracking-tighter text-gray-900 leading-none">
+                Trust<span class="text-amber-400">aurant</span>
+            </h1>
+            <p class="text-gray-700 font-nunito leading-relaxed text-lg text-justify">
+                Trustaurant is a comprehensive mobile application designed to revolutionize the dining experience. It seamlessly integrates restaurant discovery, detailed menu exploration, transparent pricing, and advanced food pre-booking, allowing users to select and reserve their meals in advance.
+            </p>
+            
+            <div class="flex space-x-4 pt-4">
+                <a href="https://apps.apple.com/in/app/trustaurant-reserve-dine-in/id6630369926">
+                    <img src="../images/ui/app_store.png" class="h-12" alt="App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.novacul.trustaurant">
+                    <img src="../images/ui/playstore.png" class="h-12" alt="Play Store">
+                </a>
+            </div>
+
+            <p class="font-abhaya text-2xl pt-4 text-black italic">
+                Experience Smarter Dining — Download Now
+            </p>
+        </div>
+
+        <div class="relative flex justify-center items-center h-[550px]">
+            <div class="yellow-bg-shape"></div>
+            <img src="../images/ui/hand-ui.png" 
+                 class="relative z-10 h-full w-auto drop-shadow-2xl" 
+                 alt="Trustaurant App Mockup">
+        </div>
+    </main>
+
+    <section class="bg-amber-400 py-20">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-black text-amber-950 mb-12">Built for the modern diner.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-xl hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-4">⭐</div>
+                    <h3 class="font-bold text-xl mb-2">Verified Only</h3>
+                    <p class="text-gray-600 font-nunito text-sm">Every restaurant is thoroughly verified by our team for cleanliness and quality.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-xl hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 class="font-bold text-xl mb-2">Pre Booking</h3>
+                    <p class="text-gray-600 font-nunito text-sm">Hassle-free reservations and advanced food pre-booking at your fingertips.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-xl hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-4">🚻</div>
+                    <h3 class="font-bold text-xl mb-2">Clean Facilities</h3>
+                    <p class="text-gray-600 font-nunito text-sm">We prioritize hygiene with separate, clean washroom facilities for families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 py-16 px-[8%] border-t">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <img src="https://trustaurant.com/images/ui/novacul_logo.png" alt="Novacul" class="h-10 opacity-70">
+            <div class="flex space-x-6 text-gray-500 text-sm font-semibold">
+                <a href="https://novacul.com/terms_conditions">Terms</a>
+                <a href="https://novacul.com/privacy_policy">Privacy</a>
+                <a href="https://novacul.com/contact-us">Support</a>
+            </div>
+            <p class="text-gray-400 text-sm">© 2026 Novacul India Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
