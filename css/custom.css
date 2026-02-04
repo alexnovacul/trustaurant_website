@@ -1667,3 +1667,18 @@ a {
     color: #666;
     line-height: 1.6;
 }
+.faq-text { margin-bottom: 12px; }
+.faq-list { padding-left: 1.2rem; }
+#faq .accordion-body p {
+  margin-bottom: 12px;
+}
+
+#faq .accordion-body ul {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-left: 1.2rem;
+}
+
+#faq .accordion-body li {
+  margin-bottom: 6px;
+}
