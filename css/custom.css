@@ -1682,3 +1682,41 @@ a {
 #faq .accordion-body li {
   margin-bottom: 6px;
 }
+.faq-background-wrapper {
+    position: relative;
+    background-image: url('../images/ui/an-bg1.png'); /* Ensure path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Creates a parallax scroll effect */
+    z-index: 1;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+/* Subtle pulse/move animation to make it feel "live" */
+@keyframes slowFloat {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
+}
+
+.faq-background-wrapper {
+    animation: slowFloat 20s ease-in-out infinite;
+}
+
+/* Darker overlay to ensure the white FAQ cards and text are readable */
+.faq-background-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #fff9eb(241, 238, 215, 0.85); /* Light overlay since your image is light */
+    z-index: -1;
+}
+.faq-background-wrapper, 
+.app-inner-content, 
+.footer-starts {
+    display: block;
+    width: 100%;
+    clear: both; /* Prevents floating elements from interfering */
+}
