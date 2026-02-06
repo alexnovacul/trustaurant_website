@@ -15,21 +15,8 @@
     <lastmod>2026-02-06</lastmod>
     <priority>0.7</priority>
   </url>
-
-  <url>
-    <loc>https://novacul.com/about</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://novacul.com/contact-us</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://novacul.com/privacy_policy</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://novacul.com/terms_conditions</loc>
-    <priority>0.3</priority>
-  </url>
+    <url>
+        <loc>https://trustaurant.com/download</loc>
+        <lastmod>2026-02-06</lastmod>
+        <priority>0.7</priority>
 </urlset>
