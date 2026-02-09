@@ -1720,3 +1720,171 @@ a {
     width: 100%;
     clear: both; /* Prevents floating elements from interfering */
 }
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px; /* Increased spacing between cards */
+  padding: 60px 20px; /* More vertical breathing room */
+  max-width: 1400px; /* Wider container for bigger cards */
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: #fff;
+  border: 1px solid #eee;
+  /* Curved Edges */
+  border-radius: 20px; 
+  overflow: hidden; /* Ensures image follows the curve */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Soft shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.card-image {
+  height: 250px; /* Taller image area */
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 25px; /* More space inside the card */
+}
+
+.card-content h3 {
+  font-size: 1.5rem; /* Larger title */
+  margin-bottom: 15px;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.hero-section {
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/ui/hero-blog.png'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+
+  /* Centering logic */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 4rem; /* Makes the "Blog" title large and clear */
+  margin: 0;
+  color: rgb(255, 253, 243); 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps visibility against images */
+}/* Unique Namespace to protect index.html */
+.tr-modern-blog {
+    background-color: #FAFAFA;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+}
+
+/* 1. HERO (Modern Grid) */
+.tr-hero-view {
+    padding: 60px 5%;
+}
+
+.tr-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.tr-hero-text { flex: 1.2; }
+.tr-hero-visual { flex: 0.8; }
+
+.tr-main-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a1a1a;
+    letter-spacing: -1px;
+}
+
+.tr-frame-hero img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* 2. TEXT SECTIONS (With proper margins) */
+.tr-text-section {
+    padding: 80px 0;
+}
+
+.tr-container {
+    max-width: 800px;
+    margin: 0 auto; /* Creates the margin you wanted */
+    padding: 0 20px;
+}
+
+/* 3. FEATURE SHOWCASE (Asymmetrical Split) */
+.tr-feature-showcase {
+    background-color: #f4f4f4;
+    padding: 100px 5%;
+    margin: 40px 0;
+}
+
+.tr-feature-container {
+    display: flex;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.tr-feature-text { flex: 1.4; }
+.tr-feature-visual { flex: 0.6; }
+
+.tr-ui-mockup {
+    background: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+}
+
+.tr-ui-mockup img {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+}
+
+/* 4. CONTENT STYLING */
+.tr-section-title {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.tr-step-list {
+    margin-top: 40px;
+}
+
+.tr-step {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.tr-step:last-child { border: none; }
+
+.tr-step h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .tr-hero-content, .tr-feature-container {
+        flex-direction: column;
+    }
+    .tr-main-heading { font-size: 2.2rem; }
+}
