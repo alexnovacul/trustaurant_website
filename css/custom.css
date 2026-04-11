@@ -1720,43 +1720,132 @@ a {
     width: 100%;
     clear: both; /* Prevents floating elements from interfering */
 }
+/* ============================================
+   BLOG GRID — Final Version
+   Replace ALL old .blog-container / .blog-card
+   / .card-image / .card-content rules with this
+   ============================================ */
+
 .blog-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 30px; /* Increased spacing between cards */
-  padding: 60px 20px; /* More vertical breathing room */
-  max-width: 1400px; /* Wider container for bigger cards */
-  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 60px 7%;
+  box-sizing: border-box;
 }
 
+/* Entire card is a clickable <a> */
 .blog-card {
-  background: #fff;
-  border: 1px solid #eee;
-  /* Curved Edges */
-  border-radius: 20px; 
-  overflow: hidden; /* Ensures image follows the curve */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Soft shadow for depth */
-  transition: all 0.3s ease;
-}
-
-.card-image {
-  height: 250px; /* Taller image area */
-  background-size: cover;
-  background-position: center;
-}
-
-.card-content {
-  padding: 25px; /* More space inside the card */
-}
-
-.card-content h3 {
-  font-size: 1.5rem; /* Larger title */
-  margin-bottom: 15px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  aspect-ratio: 3 / 3.2;       /* tall enough to show image + text comfortably */
+  transition: transform 0.28s ease;
 }
 
 .blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.blog-card:hover .blog-card-img {
+  transform: scale(1.06);
+}
+
+/* Full-bleed background image — 65% of the card is pure image */
+.blog-card-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+/* Gradient only covers bottom 35% — clear at 35%, dark at bottom */
+.blog-card-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.94) 0%,
+    rgba(0, 0, 0, 0.82) 20%,
+    rgba(0, 0, 0, 0.30) 30%,
+    rgba(0, 0, 0, 0.00) 40%
+  );
+}
+
+/* Text block sits at the bottom over the gradient */
+.blog-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px 14px;
+}
+
+.blog-card-cat {
+  font-family: 'Poppins', sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #FFB300;
+  margin: 0 0 3px;
+}
+
+.blog-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.38;
+  margin: 0 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-card-desc {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.42;
+  margin: 0 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-card-date {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 8.5px;
+  color: rgba(255, 255, 255, 0.42);
+  margin: 0;
+}
+
+/* ---- Responsive ---- */
+
+/* Tablet: 2 columns */
+@media only screen and (max-width: 991px) {
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 5%;
+  }
+}
+
+/* Mobile: 1 column */
+@media only screen and (max-width: 575px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+    padding: 28px 4%;
+    gap: 14px;
+  }
 }
 .hero-section {
   width: 100%;
@@ -1810,12 +1899,11 @@ a {
 
 .tr-frame-hero img {
     width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    height: auto; /* Let the image dictate height */
+    max-height: 80vh; /* Prevents it from being too tall on huge monitors */
+    object-fit: contain; /* Shows the FULL image without cropping */
     border-radius: 50px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
-
 /* 2. TEXT SECTIONS (With proper margins) */
 .tr-text-section {
     padding: 80px 0;
@@ -1887,4 +1975,97 @@ a {
         flex-direction: column;
     }
     .tr-main-heading { font-size: 2.2rem; }
+}
+/* Container Spacing */
+.tr-details-section {
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 1. Benefits Section: Icon-style Cards */
+.tr-bullet-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: grid;
+    gap: 25px;
+}
+
+.tr-bullet-list li {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Yellow Accent Bar on Hover */
+.tr-bullet-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #FFC107;
+    transition: width 0.3s ease;
+}
+
+.tr-bullet-list li:hover {
+    transform: translateY(-10px);
+    border-color: #FFC107;
+}
+
+.tr-bullet-list li:hover::before {
+    width: 8px;
+}
+
+.tr-bullet-list strong {
+    display: block;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 2. Live Menu: The "Dark Tech" Break */
+.tr-live-menu-callout {
+    background: #1a1a1a; /* Pure Black */
+    color: #ffffff;
+    padding: 80px 50px;
+    border-radius: 30px;
+    margin: 60px 0;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.tr-live-menu-callout h2 {
+    color: #FFC107; /* Brand Yellow */
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.tr-live-menu-callout p {
+    color: #bbb;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* 3. Vision Section: Clean Minimalist */
+.tr-vision-footer {
+    text-align: center;
+    padding: 60px;
+    background: #f9f9f9;
+    border-radius: 30px;
+    border: 1px dashed #ccc;
+}
+
+.tr-vision-footer h2 {
+    font-weight: 800;
+    margin-bottom: 20px;
 }
